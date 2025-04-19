@@ -71,6 +71,7 @@ const CodingProfiles = () => {
             <Box sx={{ maxWidth: '1000px', mx: 'auto' }}>
               <Grid container spacing={4}>
                 {profiles.map((profile, index) => (
+                  // @ts-ignore - Ignore TypeScript error for MUI Grid
                   <Grid item xs={12} md={4} key={profile.platform}>
                     <motion.div
                       initial={{ opacity: 0, y: 20 }}

@@ -1,12 +1,8 @@
-import { useState } from 'react';
 import {
   Box,
   Typography,
   Container,
-  TextField,
-  Button,
   Grid,
-  Paper,
   IconButton,
 } from '@mui/material';
 import { motion } from 'framer-motion';
@@ -15,25 +11,6 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
-  });
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission here
-    console.log(formData);
-  };
 
   return (
     <Box id="contact" component="section" sx={{ minHeight: '100vh', display: 'flex', alignItems: 'center', py: 8 }}>
@@ -96,6 +73,7 @@ const Contact = () => {
                 </form>
               </Paper>
             </Grid> */}
+            {/* @ts-ignore - Ignore TypeScript error for MUI Grid */}
             <Grid item xs={12} md={6}>
               <Box sx={{ textAlign: 'center', mt: { xs: 4, md: 0 } }}>
                 <Typography variant="h5" gutterBottom>

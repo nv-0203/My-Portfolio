@@ -1,4 +1,4 @@
-import { Box, Typography, Container, Paper, Grid } from '@mui/material';
+import { Box, Typography, Container, Paper } from '@mui/material';
 import { motion } from 'framer-motion';
 import WorkIcon from '@mui/icons-material/Work';
 

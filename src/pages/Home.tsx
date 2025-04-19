@@ -1,17 +1,17 @@
-import { Box, Typography, Button, Container, Grid, Paper, Avatar, IconButton } from '@mui/material';
+import { Box, Typography, Container, Avatar, IconButton } from '@mui/material';
 import { motion } from 'framer-motion';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
 
-const skills = [
-  { name: 'React', level: 90 },
-  { name: 'TypeScript', level: 85 },
-  { name: 'Node.js', level: 80 },
-  { name: 'C++', level: 75 },
-  { name: 'Python', level: 75 },
-  { name: 'SQL', level: 70 },
-];
+// const skills = [
+//   { name: 'React', level: 90 },
+//   { name: 'TypeScript', level: 85 },
+//   { name: 'Node.js', level: 80 },
+//   { name: 'C++', level: 75 },
+//   { name: 'Python', level: 75 },
+//   { name: 'SQL', level: 70 },
+// ];
 
 const Home = () => {
   return (
